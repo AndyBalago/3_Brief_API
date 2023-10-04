@@ -35,6 +35,7 @@ main h1{
     width: 15rem;
     align-content: center;
     margin-left: 2.5rem;
+    cursor: pointer;
     
 }
 a:link, a:visited, a:active {
@@ -82,6 +83,7 @@ a{
     float: right;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
   }
   .descrip{
     padding: 2rem;
