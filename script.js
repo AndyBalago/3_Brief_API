@@ -31,7 +31,7 @@ function montrerUsers(user) {
                                                 <h1 class="nom">${user.first_name} ${user.last_name}</h1>
                                                 <img src="${user.avatar}" class="img" alt="avatar">
                                                 <p class="descrip">${lorem} </p>
-                                                <a href="mailto:${user.email}  class="mail">${user.email}</a>
+                                                <a href="mailto:${user.email}"  class="mail">${user.email}</a>
                                             </div>
                                         `;
 
