@@ -1,4 +1,7 @@
 const contenedorUsers = document.querySelector('#root');
+let lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ';
+
+//---------Recuperacion de la data de la API para las dos paginas-------------//
 
 for (let i = 1; i <= 2; i++) {
     fetch(`https://reqres.in/api/users?page=${i}`)
@@ -6,7 +9,8 @@ for (let i = 1; i <= 2; i++) {
         .then(result => result.data.map(user => montrerUsers(user)))
         .catch(error => console.log(error))
 }
-let lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ';
+
+//---------Funcion que permite agregar codigo HTML para la creacion de card para cada usario de la API -------------//
 
 function montrerUsers(user) {
     console.log(user);
@@ -34,6 +38,7 @@ function montrerUsers(user) {
     contenedorUsers.appendChild(createModal);
     contenedorUsers.append(div);
 }
+//---------Funciones para abrir y cerrar la modal-------------//
 
 function openModal(id) {
     document.getElementById("myModal" + id).style.display = "block";
