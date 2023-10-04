@@ -21,7 +21,7 @@ function montrerUsers(user) {
     
                         <h1 class="nom">${user.first_name} ${user.last_name}</h1>
                         <img onclick="openModal(${user.id})"src="${user.avatar}" class="img" alt="avatar">
-                        <a href="mailto:${user.email}  class="mail">${user.email}</a>
+                        <a href="mailto:${user.email}"  class="mail">${user.email}</a>
                     `;
     const createModal = document.createElement('div');
     createModal.classList.add("modal");
